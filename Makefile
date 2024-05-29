@@ -125,5 +125,8 @@ specimen:
 	rm *.pnm
 	$(OXIPNG) -o max *.png
 
+sr-cyr:
+	patch -p1 < patch/serbian-cyrillic.patch
+
 clean:
 	rm -f *.bak *.dfont *.fon *.gz *.sfd *.otb *.otf *.pcf *.psfu spleen*.png
